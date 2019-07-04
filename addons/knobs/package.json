@@ -12,7 +12,9 @@
   "scripts": {
     "prepare": "node ../../scripts/prepare.js",
     "publish-storybook": "bash .scripts/publish_storybook.sh",
-    "storybook": "start-storybook -p 9010"
+    "storybook": "start-storybook -p 9010",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
@@ -25,7 +27,8 @@
     "react-color": "^2.11.4",
     "react-datetime": "^2.11.1",
     "react-textarea-autosize": "^5.2.1",
-    "util-deprecate": "^1.0.2"
+    "util-deprecate": "^1.0.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "raw-loader": "^0.5.1",
@@ -36,5 +39,6 @@
     "@storybook/addons": "^3.3.0",
     "react": "*",
     "react-dom": "*"
-  }
+  },
+  "snyk": true
 }
