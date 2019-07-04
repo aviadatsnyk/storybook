@@ -3,7 +3,9 @@
   "version": "3.4.0-alpha.4",
   "scripts": {
     "start": "webpack-dev-server",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -16,7 +18,8 @@
     "@webcomponents/webcomponentsjs": "^1.0.17",
     "global": "^4.3.2",
     "polymer-webpack-loader": "^2.0.0",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel": "^6.23.0",
@@ -27,5 +30,6 @@
     "copy-webpack-plugin": "^4.2.0",
     "html-webpack-plugin": "^2.30.1",
     "webpack-dev-server": "^2.11.0"
-  }
+  },
+  "snyk": true
 }
