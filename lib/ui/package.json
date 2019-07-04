@@ -12,7 +12,9 @@
   "scripts": {
     "prepare": "node ../../scripts/prepare.js",
     "publish-storybook": "bash ./.scripts/publish_storybook.sh",
-    "storybook": "start-storybook -p 9010"
+    "storybook": "start-storybook -p 9010",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@storybook/components": "^3.4.0-alpha.4",
@@ -37,7 +39,8 @@
     "react-modal": "^3.1.11",
     "react-split-pane": "^0.1.74",
     "react-treebeard": "^2.1.0",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "react": "*",
@@ -46,5 +49,6 @@
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.0-alpha.4",
     "@storybook/react": "^3.4.0-alpha.4"
-  }
+  },
+  "snyk": true
 }
