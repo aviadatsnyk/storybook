@@ -11,9 +11,10 @@
   },
   "scripts": {
     "build-storybook": "build-storybook",
-    "prepare": "node ../../scripts/prepare.js",
+    "prepare": "npm run snyk-protect && node ../../scripts/prepare.js",
     "storybook": "start-storybook -p 6006",
-    "example": "jest storyshot.test"
+    "example": "jest storyshot.test",
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "@storybook/channels": "^3.4.0-alpha.4",
@@ -24,7 +25,8 @@
     "jest-specific-snapshot": "^0.3.0",
     "prop-types": "^15.6.0",
     "puppeteer": "^0.13.0",
-    "read-pkg-up": "^3.0.0"
+    "read-pkg-up": "^3.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@storybook/addons": "^3.4.0-alpha.4",
@@ -44,5 +46,6 @@
   "peerDependencies": {
     "@storybook/addons": "^3.4.0-alpha.4",
     "babel-core": "^6.26.0 || ^7.0.0-0"
-  }
+  },
+  "snyk": true
 }
