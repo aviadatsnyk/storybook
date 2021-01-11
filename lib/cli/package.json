@@ -25,7 +25,7 @@
     "test": "cd test && ./run_tests.sh"
   },
   "dependencies": {
-    "@storybook/codemod": "^3.4.0-alpha.4",
+    "@storybook/codemod": "^5.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
