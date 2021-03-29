@@ -24,7 +24,7 @@
     "jest-specific-snapshot": "^0.3.0",
     "prop-types": "^15.6.0",
     "puppeteer": "^0.13.0",
-    "read-pkg-up": "^3.0.0"
+    "read-pkg-up": "^8.0.0"
   },
   "devDependencies": {
     "@storybook/addons": "^3.4.0-alpha.4",
