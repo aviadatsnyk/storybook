@@ -28,7 +28,7 @@
     "@storybook/addons": "^3.4.0-alpha.4",
     "@storybook/channel-postmessage": "^3.4.0-alpha.4",
     "@storybook/client-logger": "^3.4.0-alpha.4",
-    "@storybook/core": "^3.4.0-alpha.4",
+    "@storybook/core": "^6.2.0",
     "@storybook/node-logger": "^3.4.0-alpha.4",
     "@storybook/ui": "^3.4.0-alpha.4",
     "airbnb-js-shims": "^1.4.0",
