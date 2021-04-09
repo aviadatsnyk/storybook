@@ -76,7 +76,7 @@
     "shelljs": "^0.8.0",
     "style-loader": "^0.18.2",
     "ts-loader": "^2.2.2",
-    "uglifyjs-webpack-plugin": "^1.1.6",
+    "uglifyjs-webpack-plugin": "^2.0.0",
     "url-loader": "^0.5.8",
     "util-deprecate": "^1.0.2",
     "uuid": "^3.2.0",
