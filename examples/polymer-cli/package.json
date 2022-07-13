@@ -15,7 +15,7 @@
     "@storybook/polymer": "^3.4.0-alpha.4",
     "@webcomponents/webcomponentsjs": "^1.0.17",
     "global": "^4.3.2",
-    "polymer-webpack-loader": "^2.0.0",
+    "polymer-webpack-loader": "^3.1.0",
     "webpack": "^3.8.1"
   },
   "devDependencies": {
